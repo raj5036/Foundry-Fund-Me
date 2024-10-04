@@ -67,6 +67,7 @@ $ cast --help
 
 # forge
 
+0. Apply remappings: `forge remappings > remappings.txt`
 1. Compile: `forge compile` or `forge build`
 2. Test: `forge test`
 3. Test with Logs: `forge test -vv`

@@ -8,7 +8,7 @@ import { HelperConfig } from "./HelperConfig.s.sol";
 contract DeployFundMe is Script {
 	function run() external returns (FundMe) {
 		HelperConfig helperConfig = new HelperConfig();
-		address ethUsdPriceFeed = helperConfig.config();
+		address ethUsdPriceFeed = helperConfig.activeNetworkConfig();
 
 		vm.startBroadcast();
 
